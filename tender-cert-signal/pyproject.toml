@@ -1,0 +1,20 @@
+[project]
+name = "tendersignal"
+version = "0.1.0"
+description = "Cross-reference AusTender contract awards against the JAS-ANZ certification register to surface ISO-certification-gap leads."
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.31",
+    "rapidfuzz>=3.0",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+tendersignal = "tendersignal.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["tendersignal"]

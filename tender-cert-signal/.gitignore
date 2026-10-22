@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+tendersignal.egg-info/
+.env
+*.db
+*.db-journal
+*.log
+leads.csv
+.pytest_cache/
